@@ -1,7 +1,8 @@
 package com.afollestad.sectionedrecyclerview;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /** @author Aidan Follestad */
 public abstract class SectionedViewHolder extends RecyclerView.ViewHolder {

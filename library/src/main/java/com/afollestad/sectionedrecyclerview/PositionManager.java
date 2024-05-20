@@ -1,7 +1,8 @@
 package com.afollestad.sectionedrecyclerview;
 
-import android.support.annotation.RestrictTo;
-import android.support.v4.util.ArrayMap;
+
+import androidx.annotation.RestrictTo;
+import androidx.collection.ArrayMap;
 
 @RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
 class PositionManager implements SectionedViewHolder.PositionDelegate {
@@ -10,7 +11,9 @@ class PositionManager implements SectionedViewHolder.PositionDelegate {
   private final ArrayMap<Integer, Integer> footerLocationMap;
   private final ArrayMap<Integer, Boolean> collapsedSectionMap;
   private ItemProvider itemProvider;
+  @SuppressWarnings("BooleanVariableAlwaysNegated")
   private boolean hasInvalidated;
+
 
   PositionManager() {
     this.headerLocationMap = new ArrayMap<>(0);
