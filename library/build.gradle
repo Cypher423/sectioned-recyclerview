@@ -8,8 +8,9 @@ ext {
 }
 
 android {
+    namespace 'com.afollestad.sectionedrecyclerview'
     compileSdkVersion versions.compileSdk
-    buildToolsVersion versions.buildTools
+//    buildToolsVersion versions.buildTools
 
     lintOptions {
         abortOnError false
@@ -29,10 +30,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:recyclerview-v7:' + versions.supportLib
-    compile 'com.android.support:support-v4:' + versions.supportLib
-    testCompile 'com.google.truth:truth:' + versions.truth
-    testCompile 'junit:junit:' + versions.junit
+//    implementation 'com.android.support:recyclerview-v7:' + versions.supportLib
+//    implementation 'com.android.support:support-v4:' + versions.supportLib
+//    testCompile 'com.google.truth:truth:' + versions.truth
+//    testCompile 'junit:junit:' + versions.junit
+    implementation 'com.google.android.material:material:1.12.0'
 }
 
-apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
+//apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
